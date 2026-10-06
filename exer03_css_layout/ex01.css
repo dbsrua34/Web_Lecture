@@ -1,0 +1,47 @@
+body{
+    width: 800px;
+    margin:
+}
+
+.header{
+    overflow: hidden;
+    border-bottom: 2px solid black ;
+}
+
+.header h2{
+    float: left;
+}
+
+.menu{
+    float: right;
+}
+
+.menu_01{
+    float: left;
+    margin: 5px;
+}
+
+.main{
+    float: left;
+    width: 65%;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+.content_01{
+    float: left;
+    width: 260px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.content_02{
+    float: right;
+    width: 140px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+
