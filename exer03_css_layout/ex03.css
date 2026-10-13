@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body.margin {
+    color: darkgray;
+    background-color: white;
+}
+
+.header {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.header h1 {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.menu {
+    display: flex;
+    background-color: red;
+    border-top: 1px solid white;
+}
+
+.menu_item {
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    border-right: 1px solid white;
+    cursor: pointer;
+    background-color: red;
+}
+
+.middle {
+    display: flex;
+    max-width: 1200px;
+    min-height: 500px;
+    gap: 40px;
+}
+
+.middle h2 {
+    margin-bottom: 10px;
+    color: darkred;
+}
+.middle h3 {
+    margin-bottom: 10px;
+    color: darkred;
+}
+.middle p {
+    margin-bottom: 5px;
+    color: black;
+}
+
+.middle_01 {
+    padding: 30px;
+    min-width: 384px;
+    color: white;
+    border-right: 1px solid white;
+    background-color: #ffd3d3;
+}
+
+.middle_02 {
+    padding-left: 5px;
+    padding-top: 40px;
+    min-width: 1072px;
+    border-right: 1px solid white;
+}
+
+.middle_02_item{
+    padding: 5px;
+    background-color: rgb(255, 243, 245);
+    border: 1px solid lightcoral;
+    margin-bottom: 15px
+}
+
+.middle_03 {
+    padding: 30px;
+    min-width: 384px;
+    color: white;
+    border-right: 1px solid white;
+    background-color: #fbb7b7;
+}
+
+.footer {
+    background-color: rgb(68, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
