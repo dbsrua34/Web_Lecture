@@ -33,11 +33,11 @@
 
 // callTenTime(fun)
 
-let person = {
-    name: '김윤겸',
-    eat: function(food) {
-        alert(this.name + '이 ' + food + '을/를 먹습니다.');
-    }
-};
+// let person = {
+//     name: '김윤겸',
+//     eat: function(food) {
+//         alert(this.name + '이 ' + food + '을/를 먹습니다.');
+//     }
+// };
 
-person.eat('밥');
+// person.eat('밥');
