@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>알바 시급 & 주휴수당 계산기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="header-title">알바 시급 & 주휴수당 계산기</h1>
+
+    <div class="setting-grid">
+        <div class="setting-card">
+            <h3>기본 정보</h3>
+            <div class="form-group">
+                <label for="wageInput">기본 시급 (원)</label>
+                <input type="number" id="wageInput" value="10320" step="100">
+            </div>
+            <div class="form-group">
+                <label for="targetMonth">조회 월 선택</label>
+                <input type="month" id="targetMonth" value="2026-11">
+            </div>
+            <div class="note">
+                <strong>주휴수당 계산식</strong><br>
+                (일주일 총 근무시간 / 40시간) × 8 × 시급<br>
+                *(단, 주 15시간 이상 근무 시 지급)*
+            </div>
+        </div>
+
+        <div class="setting-card">
+            <h3>요일별 기본 일일 근무 시간 (시간)</h3>
+            <div class="day-rule-row"><span>월요일</span><input type="number" class="day-rule-input" data-day="0" value="0" min="0" max="24" step="0.5"></div>
+            <div class="day-rule-row"><span>화요일</span><input type="number" class="day-rule-input" data-day="1" value="0" min="0" max="24" step="0.5"></div>
+            <div class="day-rule-row"><span>수요일</span><input type="number" class="day-rule-input" data-day="2" value="0" min="0" max="24" step="0.5"></div>
+            <div class="day-rule-row"><span>목요일</span><input type="number" class="day-rule-input" data-day="3" value="0" min="0" max="24" step="0.5"></div>
+            <div class="day-rule-row"><span>금요일</span><input type="number" class="day-rule-input" data-day="4" value="0" min="0" max="24" step="0.5"></div>
+            <div class="day-rule-row"><span>토요일</span><input type="number" class="day-rule-input" data-day="5" value="0" min="0" max="24" step="0.5"></div>
+            <div class="day-rule-row"><span>일요일</span><input type="number" class="day-rule-input" data-day="6" value="0" min="0" max="24" step="0.5"></div>
+        </div>
+    </div>
+    <div class="action-box">
+        <button class="btn-search" id="searchBtn">조회하기</button>
+    </div>
+    
+    <div class="calendar-box">
+        <div class="calendar-nav">
+            <button id="prevMonthBtn">< 이전달</button>
+            <h2 id="calendarTitle">2026년 11월</h2>
+            <button id="nextMonthBtn">다음달 ></button>
+        </div>
+        <div class="weekdays-grid">
+            <div>일</div><div>월</div><div>화</div><div>수</div><div>목</div><div>금</div><div>토</div>
+        </div>
+        <div class="days-grid" id="daysGrid"></div>
+    </div>
+</div>
+</body>
+</html>
